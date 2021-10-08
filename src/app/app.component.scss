@@ -1,0 +1,18 @@
+.logo {
+  font-family: Open Sans,sans-serif;
+  padding: 0 1.25rem;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  margin: auto auto;
+}
+
+.card-row {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.card-col {
+  flex: 1 0 calc(50% - 1rem);
+  margin: 0 0.5rem;
+}

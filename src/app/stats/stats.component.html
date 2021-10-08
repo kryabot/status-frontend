@@ -1,0 +1,45 @@
+<div class="card-row">
+  <div class="card-col">
+    <nb-card>
+      <nb-card-header>{{ twitchTmiAdapter.title }} <button nbButton size="small" status="{{ translateStatus(twitchTmiAdapter.status) }}" outline class="disabled-btn" style="float: right;">{{ translateStatusText(twitchTmiAdapter.status) }}</button></nb-card-header>
+      <nb-card-body [nbSpinner]="twitchTmiAdapter.isLoading()" nbSpinnerStatus="warning"> {{ formatUptime(twitchTmiAdapter) }}</nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-header>{{ twitchBot.title }} <button nbButton size="small" status="{{ translateStatus(twitchBot.status) }}" outline class="disabled-btn" style="float: right;">{{ translateStatusText(twitchBot.status) }}</button></nb-card-header>
+      <nb-card-body [nbSpinner]="twitchBot.isLoading()" nbSpinnerStatus="warning"> {{ formatUptime(twitchBot)}}</nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-header> {{ twitchSpamDetector.title }} <button nbButton size="small" status="{{ translateStatus(twitchSpamDetector.status) }}" outline class="disabled-btn" style="float: right;">{{ translateStatusText(twitchSpamDetector.status) }}</button></nb-card-header>
+      <nb-card-body [nbSpinner]="twitchSpamDetector.isLoading()" nbSpinnerStatus="warning"> {{ formatUptime(twitchSpamDetector) }}</nb-card-body>
+    </nb-card>
+  </div>
+  <div class="card-col">
+    <nb-card>
+      <nb-card-header>{{ externalApi.title }} <button nbButton size="small" status="{{ translateStatus(externalApi.status) }}" outline class="disabled-btn" style="float: right;">{{ translateStatusText(externalApi.status) }}</button></nb-card-header>
+      <nb-card-body [nbSpinner]="externalApi.isLoading()" nbSpinnerStatus="warning"> {{ formatUptime(externalApi) }}</nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-header>{{ internalApi.title }} <button nbButton size="small" status="{{ translateStatus(internalApi.status) }}" outline class="disabled-btn" style="float: right;">{{ translateStatusText(internalApi.status) }}</button></nb-card-header>
+      <nb-card-body [nbSpinner]="internalApi.isLoading()" nbSpinnerStatus="warning"> {{ formatUptime(internalApi) }}</nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-header>{{ telegramInfoManager.title }} <button nbButton size="small" status="{{ translateStatus(telegramInfoManager.status) }}" outline class="disabled-btn" style="float: right;">{{ translateStatusText(telegramInfoManager.status) }}</button></nb-card-header>
+      <nb-card-body [nbSpinner]="telegramInfoManager.isLoading()" nbSpinnerStatus="warning"> {{ formatUptime(telegramInfoManager) }}</nb-card-body>
+    </nb-card>
+  </div>
+
+  <div class="card-col">
+    <nb-card>
+      <nb-card-header>{{ telegramKryaBot.title }} <button nbButton size="small" status="{{ translateStatus(telegramKryaBot.status) }}" outline class="disabled-btn" style="float: right;">{{ translateStatusText(telegramKryaBot.status) }}</button></nb-card-header>
+      <nb-card-body [nbSpinner]="telegramKryaBot.isLoading()" nbSpinnerStatus="warning"> {{ formatUptime(telegramKryaBot) }}</nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-header>{{ telegramAuthBot.title }} <button nbButton size="small" status="{{ translateStatus(telegramAuthBot.status) }}" outline class="disabled-btn" style="float: right;">{{ translateStatusText(telegramAuthBot.status) }}</button></nb-card-header>
+      <nb-card-body [nbSpinner]="telegramAuthBot.isLoading()" nbSpinnerStatus="warning"> {{ formatUptime(telegramAuthBot) }}</nb-card-body>
+    </nb-card>
+    <nb-card>
+      <nb-card-header>{{ telegramInfoBot.title }} <button nbButton size="small" status="{{ translateStatus(telegramInfoBot.status) }}" outline class="disabled-btn" style="float: right;">{{ translateStatusText(telegramInfoBot.status) }}</button></nb-card-header>
+      <nb-card-body [nbSpinner]="telegramInfoBot.isLoading()" nbSpinnerStatus="warning"> {{ formatUptime(telegramInfoBot) }}</nb-card-body>
+    </nb-card>
+  </div>
+</div>
